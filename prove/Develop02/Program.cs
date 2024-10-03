@@ -25,11 +25,11 @@ class Program
             {
                 //Get a random prompt question
                 PromptGenerator myPrompt = new PromptGenerator();
-                string randomPrompt = myPrompt.GetRandomPrompt(); 
+                string randomPrompt = myPrompt.GetRandomPrompt();
                 Entry anEntry = new Entry();
                 //Go into the AddEntry method
                 theJournal.AddEntry(anEntry, randomPrompt);
-                
+
             }
             else if (userChoice == "2") //Display
             {
@@ -43,13 +43,13 @@ class Program
             }
             else if (userChoice == "4")  //Save
             {
-                 Console.WriteLine("What name would you like to assign to this file? ");
+                Console.WriteLine("What name would you like to assign to this file? ");
                 string fileName = Console.ReadLine();
                 theJournal.SaveToFile(fileName);
             }
             else if (userChoice == "5")  //Quit
             {
-                
+
             }
             else //not a valid number
             {
